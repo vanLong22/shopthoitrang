@@ -1,0 +1,156 @@
+ body {
+	font-family: sans-serif;
+	margin: 0;
+	display: flex;
+}
+/*
+.sidebar {
+	width: 200px;
+	background-color: #FFF;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	height: 100vh;
+}
+
+.sidebar h1 {
+	margin-bottom: 20px;
+	font-size: 1.5em;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar li {
+	margin-bottom: 10px;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+	background-color: #F0F0F0;
+}
+
+*/
+.main {
+	flex: 1;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 20px;
+	overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá dài */
+	height: calc(100vh - 40px); /* Đặt chiều cao tối đa cho .main-content */
+}
+
+.main h2 {
+	margin-bottom: 20px;
+	grid-column: 1 / -1;
+}
+
+.form-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	grid-column: 1 / -1;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.form-group button {
+	padding: 10px 20px;
+	background-color: blue;
+	color: #FFF;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.form-group button:hover {
+	background-color: #45a049;
+}
+
+.form-group img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+/*
+
+.description {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px; 
+}
+
+.description textarea {
+    width: 100%;  
+    box-sizing: border-box;    
+}
+
+.description button {
+    align-self: flex-start;   
+}
+*/
+.description {
+  margin-top: 20px;
+}
+
+.description label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.description textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: vertical; /* Cho phép người dùng thay đổi chiều cao */
+}
+
+.description button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745; /* Màu xanh lá */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.description button:hover {
+  background-color: #218838; /* Đổi màu khi hover */
+}

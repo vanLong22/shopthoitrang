@@ -1,0 +1,60 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+.map {
+    width: 80%;
+    height: 300px;
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ kích thước của thẻ img */
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin-bottom: 20px;
+}
+.contact-form{
+	margin-right: 30px;
+}
+.contact-form, .contact-info {
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	width: 48%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form h2, .contact-info h2 {
+	margin-top: 0;
+	color: red;
+}
+.contact-form label {
+	display: block;
+	margin: 10px 0 5px;
+}
+.contact-form input, .contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.contact-form button {
+	padding: 10px 15px;
+	background: #007BFF;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.contact-form button:hover {
+	background: #0056b3;
+}
+.contact-info p {
+	margin: 10px 0;
+}

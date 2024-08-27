@@ -1,0 +1,136 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+.container {
+	display: flex;
+	margin: 20px;
+}
+/* Đảm bảo rằng .sidebar có thanh cuộn nếu nội dung vượt quá */
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá dài */
+    height: calc(100vh - 40px); /* Đặt chiều cao tối đa cho .sidebar */
+}
+ 
+ 
+.sidebar h3 {
+	margin-top: 0;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar li {
+	margin-bottom: 10px;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: #333;
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	border-radius: 5px;
+	transition: background-color 0.2s ease;
+}
+
+.sidebar a:hover {
+	background-color: #eee;
+}
+
+.sidebar a i {
+	margin-right: 10px;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá dài */
+    height: calc(100vh - 40px); /* Đặt chiều cao tối đa cho .main-content */
+}
+
+.main-content h2 {
+	margin-top: 0;
+}
+
+.main-content .form-group {
+	margin-bottom: 20px;
+}
+
+.main-content label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.main-content input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.main-content button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.main-content table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.main-content th, .main-content td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.main-content .actions {
+	display: flex;
+	gap: 10px;
+}
+
+.main-content .actions a {
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 12px;
+	border-radius: 5px;
+	transition: background-color 0.2s ease;
+}
+
+.main-content .actions a:hover {
+	opacity: 0.8;
+}
+
+.edit-btn {
+	background-color: #4CAF50;
+}
+
+.delete-btn {
+	background-color: #f44336;
+}
+
+.main-content .actions .edit-btn {
+	background-color: #4CAF50;
+}
+
+.main-content .actions .delete-btn {
+	background-color: #f44336;
+}
